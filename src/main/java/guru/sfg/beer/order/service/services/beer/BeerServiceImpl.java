@@ -1,14 +1,13 @@
 package guru.sfg.beer.order.service.services.beer;
 
-import java.util.Optional;
-import java.util.UUID;
-
+import guru.sfg.beer.order.service.web.model.BeerDto;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.boot.web.client.RestTemplateBuilder;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
-import guru.sfg.beer.order.service.web.model.BeerDto;
+import java.util.Optional;
+import java.util.UUID;
 
 @ConfigurationProperties(prefix = "brewery", ignoreUnknownFields = false)
 @Service
@@ -31,6 +30,7 @@ public class BeerServiceImpl implements BeerService {
 
 	@Override
 	public Optional<BeerDto> getBeerByUpc(String upc) {
+		System.out.println(beerServiceHost + BEER_UPC_PATH_V1 + upc);
 		return Optional.of(restTemplate.getForObject(beerServiceHost + BEER_UPC_PATH_V1 + upc, BeerDto.class));
 	}
 
