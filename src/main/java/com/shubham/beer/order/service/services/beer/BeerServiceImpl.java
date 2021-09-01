@@ -5,7 +5,7 @@ import org.springframework.boot.web.client.RestTemplateBuilder;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
-import com.shubham.beer.order.service.web.model.BeerDto;
+import com.shubham.brewery.model.BeerDto;
 
 import java.util.Optional;
 import java.util.UUID;

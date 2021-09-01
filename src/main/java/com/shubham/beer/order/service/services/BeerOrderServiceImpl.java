@@ -31,8 +31,8 @@ import com.shubham.beer.order.service.domain.Customer;
 import com.shubham.beer.order.service.repositories.BeerOrderRepository;
 import com.shubham.beer.order.service.repositories.CustomerRepository;
 import com.shubham.beer.order.service.web.mappers.BeerOrderMapper;
-import com.shubham.beer.order.service.web.model.BeerOrderDto;
-import com.shubham.beer.order.service.web.model.BeerOrderPagedList;
+import com.shubham.brewery.model.BeerOrderDto;
+import com.shubham.brewery.model.BeerOrderPagedList;
 
 import java.util.Optional;
 import java.util.UUID;

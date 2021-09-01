@@ -7,8 +7,8 @@ import org.springframework.beans.factory.annotation.Qualifier;
 
 import com.shubham.beer.order.service.domain.BeerOrderLine;
 import com.shubham.beer.order.service.services.beer.BeerService;
-import com.shubham.beer.order.service.web.model.BeerDto;
-import com.shubham.beer.order.service.web.model.BeerOrderLineDto;
+import com.shubham.brewery.model.BeerDto;
+import com.shubham.brewery.model.BeerOrderLineDto;
 
 public abstract class BeerOrderLineMapperDecorator implements BeerOrderLineMapper {
 

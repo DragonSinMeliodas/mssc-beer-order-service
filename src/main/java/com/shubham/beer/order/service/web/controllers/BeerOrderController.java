@@ -22,8 +22,8 @@ import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
 import com.shubham.beer.order.service.services.BeerOrderService;
-import com.shubham.beer.order.service.web.model.BeerOrderDto;
-import com.shubham.beer.order.service.web.model.BeerOrderPagedList;
+import com.shubham.brewery.model.BeerOrderDto;
+import com.shubham.brewery.model.BeerOrderPagedList;
 
 import java.util.UUID;
 

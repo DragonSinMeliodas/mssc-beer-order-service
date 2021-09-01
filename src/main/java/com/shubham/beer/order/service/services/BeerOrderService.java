@@ -20,8 +20,8 @@ package com.shubham.beer.order.service.services;
 
 import org.springframework.data.domain.Pageable;
 
-import com.shubham.beer.order.service.web.model.BeerOrderDto;
-import com.shubham.beer.order.service.web.model.BeerOrderPagedList;
+import com.shubham.brewery.model.BeerOrderDto;
+import com.shubham.brewery.model.BeerOrderPagedList;
 
 import java.util.UUID;
 

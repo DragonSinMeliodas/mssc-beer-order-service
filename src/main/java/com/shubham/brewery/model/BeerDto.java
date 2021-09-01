@@ -1,4 +1,4 @@
-package com.shubham.beer.order.service.web.model;
+package com.shubham.brewery.model;
 
 import java.math.BigDecimal;
 import java.time.OffsetDateTime;

@@ -21,7 +21,7 @@ import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 
 import com.shubham.beer.order.service.domain.BeerOrder;
-import com.shubham.beer.order.service.web.model.BeerOrderDto;
+import com.shubham.brewery.model.BeerOrderDto;
 
 @Mapper(uses = { DateMapper.class, BeerOrderLineMapper.class })
 public interface BeerOrderMapper {

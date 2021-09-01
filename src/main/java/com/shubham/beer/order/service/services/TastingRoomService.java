@@ -9,8 +9,8 @@ import com.shubham.beer.order.service.bootstrap.BeerOrderBootStrap;
 import com.shubham.beer.order.service.domain.Customer;
 import com.shubham.beer.order.service.repositories.BeerOrderRepository;
 import com.shubham.beer.order.service.repositories.CustomerRepository;
-import com.shubham.beer.order.service.web.model.BeerOrderDto;
-import com.shubham.beer.order.service.web.model.BeerOrderLineDto;
+import com.shubham.brewery.model.BeerOrderDto;
+import com.shubham.brewery.model.BeerOrderLineDto;
 
 import java.util.ArrayList;
 import java.util.List;
