@@ -15,7 +15,7 @@
  *     along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-package com.shubham.beer.order.service.services;
+package com.shubham.beer.order.service.services.impl;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.ApplicationEventPublisher;
@@ -30,6 +30,7 @@ import com.shubham.beer.order.service.domain.BeerOrderStatusEnum;
 import com.shubham.beer.order.service.domain.Customer;
 import com.shubham.beer.order.service.repositories.BeerOrderRepository;
 import com.shubham.beer.order.service.repositories.CustomerRepository;
+import com.shubham.beer.order.service.services.BeerOrderService;
 import com.shubham.beer.order.service.web.mappers.BeerOrderMapper;
 import com.shubham.brewery.model.BeerOrderDto;
 import com.shubham.brewery.model.BeerOrderPagedList;

@@ -1,10 +1,11 @@
-package com.shubham.beer.order.service.services.beer;
+package com.shubham.beer.order.service.services.beer.impl;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.boot.web.client.RestTemplateBuilder;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
+import com.shubham.beer.order.service.services.beer.BeerService;
 import com.shubham.brewery.model.BeerDto;
 
 import java.util.Optional;
