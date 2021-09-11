@@ -13,7 +13,7 @@ import com.shubham.beer.order.service.domain.BeerOrderEventEnum;
 import com.shubham.beer.order.service.domain.BeerOrderStatusEnum;
 import com.shubham.beer.order.service.repositories.BeerOrderRepository;
 import com.shubham.beer.order.service.services.BeerOrderManager;
-import com.shubham.beer.order.service.services.BeerOrderStateChangeInterceptor;
+import com.shubham.beer.order.service.sm.BeerOrderStateChangeInterceptor;
 
 import lombok.RequiredArgsConstructor;
 

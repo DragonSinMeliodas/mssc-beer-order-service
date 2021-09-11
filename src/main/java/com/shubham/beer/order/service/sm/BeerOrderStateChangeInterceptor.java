@@ -1,4 +1,4 @@
-package com.shubham.beer.order.service.services;
+package com.shubham.beer.order.service.sm;
 
 import java.util.Optional;
 import java.util.UUID;
@@ -22,7 +22,8 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 @Component
 @RequiredArgsConstructor
-public class BeerOrderStateChangeInterceptor extends StateMachineInterceptorAdapter<BeerOrderStatusEnum, BeerOrderEventEnum> {
+public class BeerOrderStateChangeInterceptor
+		extends StateMachineInterceptorAdapter<BeerOrderStatusEnum, BeerOrderEventEnum> {
 
 	private final BeerOrderRepository beerOrderRepository;
 
@@ -31,7 +32,6 @@ public class BeerOrderStateChangeInterceptor extends StateMachineInterceptorAdap
 			Message<BeerOrderEventEnum> message, Transition<BeerOrderStatusEnum, BeerOrderEventEnum> transition,
 			StateMachine<BeerOrderStatusEnum, BeerOrderEventEnum> stateMachine,
 			StateMachine<BeerOrderStatusEnum, BeerOrderEventEnum> rootStateMachine) {
-
 		Optional.ofNullable(message)
 				.flatMap(msg -> Optional
 						.ofNullable((String) msg.getHeaders().getOrDefault(BeerOrderManagerImpl.ORDER_ID_HEADER, " ")))
@@ -42,7 +42,6 @@ public class BeerOrderStateChangeInterceptor extends StateMachineInterceptorAdap
 					beerOrder.setOrderStatus(state.getId());
 					beerOrderRepository.saveAndFlush(beerOrder);
 				});
-
 	}
 
 }
